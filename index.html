@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Weather Forecast</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="background-img">
+            <div id="nav" class="row">
+                <h1 id="nav-title" class="col">DojoWeather</h1>
+                <ul id="nav-links" class="col-2">
+                    <li><a href="#" onclick="alert('Loading weather report')">Burbank</a></li>
+                    <li><a href="#" onclick="alert('Loading weather report')">Chicago</a></li>
+                    <li><a href="#" onclick="alert('Loading weather report')">Dallas</a></li>
+                </ul>
+            </div>
+            <div id="container">
+                <div class="row , con1">
+                    <div class="col , left">
+                        <h3>San Jose</h3>
+                    </div>
+                    <div class="col-2 , right">
+                        <form >
+                            <label for="temperature" >show temperature in</label>
+                            <select name="temperature" class="btn" id="Tem" onclick="display();">
+                                <option value="c" id="changeF">°C</option>
+                                <option value="f" id="swichToC">°F</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div  class="col , card">
+                        <h4>Today</h4>
+                        <img class="icon" src="rain.png" alt="rain">
+                        <p>some rain</p>
+                        <ul id="temc">
+                            <li><span class="number" id="f1">24°</span></li>
+                            <li><span class="number" id="f2">18°</span></li>
+                        </ul>
+                    </div>
+                    <div class="col , card">
+                        <h4>Tomorrow</h4>
+                        <img class="icon" src="sun.png" alt="sun">
+                        <p>some sun</p>
+                        <ul id="temc">
+                            <li><span class="number" id="f3">27°</span></li>
+                            <li><span class="number" id="f4">19°</span></li>
+                        </ul>
+                    </div>
+                    <div class="col , card">
+                        <h4>Friday</h4>
+                        <img class="icon" src="cloud.png" alt="cloud">
+                        <p>some cluds</p>
+                        <ul id="temc">
+                            <li><span class="number" id="f5">21°</span></li>
+                            <li><span class="number" id="f6">16°</span></li>
+                        </ul>
+                    </div>
+                    <div class="col , card">
+                        <h4>Saturday</h4>
+                        <img class="icon" src="sun.png" alt="sun">
+                        <p>some sun</p>
+                        <ul id="temc">
+                            <li><span class="number" id="f7">26°</span></li>
+                            <li><span class="number" id="f8">21°</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="card" class="row , card">
+                    <div class="col">
+                        <img src="cookie.png" alt="cookie" class="icon1" >
+                    </div> 
+                    <div class="col-3">
+                        <h4>Stop! Cookie time</h4>
+                        <p>we use cookies (sadly not the edible ones) to presonalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                    </div>
+                    <div class="col"><button class="btn" id="accept" onclick="accept(this)">I Accept</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
