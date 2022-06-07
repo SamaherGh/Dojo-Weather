@@ -28,14 +28,6 @@
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    #nav-title{
-        background-color: aquamarine;
-        font-weight: bold;
-        text-align: center;
-    }
-}
-
 #nav-links{
     display: flex;
     justify-content: end;
